@@ -1,0 +1,81 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.about .container, header .navbar, header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: linear-gradient(to right, #7b0296, #452d4b);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+header .logo {
+  font-weight: 700;
+  font-size: 32px;
+}
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all linear;
+}
+header .logo a:hover {
+  color: #13a3f7;
+}
+header .navbar {
+  width: 60%;
+  list-style: none;
+}
+header .navbar li:nth-child(1) {
+  padding-top: 5px;
+}
+header .navbar li:nth-child(2) {
+  padding-top: 15px;
+}
+header .navbar li:nth-child(3) {
+  padding-top: 25px;
+}
+header .navbar li:nth-child(4) {
+  padding-top: 35px;
+}
+header .navbar li:nth-child(5) {
+  padding-top: 45px;
+}
+
+.about {
+  margin-top: 100px;
+}
+.about .container {
+  width: 87%;
+  margin: 0 auto;
+}
+.about .container .col {
+  background-color: #252525;
+  width: 26%;
+  border-radius: 20px;
+  padding: 20px;
+}
+.about .container img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.about .container h2 {
+  text-align: center;
+  color: #fff;
+  border-left: 2px solid #e2cc4f;
+  border-right: 2px solid #e2cc4f;
+}
+.about .container p {
+  color: #ccc;
+  line-height: 15px;
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

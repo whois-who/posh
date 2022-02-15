@@ -1,0 +1,56 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+    %dflex{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+header{
+    background: linear-gradient(to right, #7b0296, #452d4b );
+    padding: {
+        top: 25px;
+        bottom: 25px;
+        left: 40px;
+        right: 50px;
+    };
+
+    @extend %dflex;
+
+
+
+    .logo{
+        font-weight: 700;
+        font-size: 32px;
+
+        a   {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s all linear;
+
+            &:hover{
+                color: rgb(19, 163, 247);
+            }
+        }
+    }
+
+    .navbar{
+        width: 60%;
+        @extend %dflex;
+        list-style: none;
+
+        @for $i from 1 through 5 {
+            li:nth-child(#{$i}) {
+                padding-top: 10px * ($i - 0.5);
+            }
+        }
+    } 
+}
+
+.about{
+    margin-top: 100px;
+    @import "about.scss";
+}
